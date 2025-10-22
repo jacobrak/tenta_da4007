@@ -4,13 +4,13 @@ using namespace std;
 
 class Greet{
 public:
-    void greet(){
+    void virtual greet(){
         cout << "hello" << endl;
     }
 };
 class Newlanguage: public Greet{
 public: 
-    void great_again(){
+    void greet() override{
         cout << "hello_cool" << endl;
     }
 };
@@ -18,5 +18,4 @@ public:
 int main(){
     Newlanguage t;
     t.greet();
-    t.great_again();
 }
