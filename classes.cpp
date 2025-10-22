@@ -18,4 +18,5 @@ public:
 int main(){
     Newlanguage t;
     t.greet();
+    cout << "check" << endl;
 }
